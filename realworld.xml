@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>User login</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Sign up</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user has an email address
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters username, email address and password</content><expected>The fields username, adsress and password are filled in
+</expected></step>
+<step>
+<index>2</index><content>User clicks the &quot;sign up&quot; button</content><expected>User is redirected to &quot;your feed&quot; page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Sign in</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is registered
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters their email address and password</content><expected>The fields are filled in
+</expected></step>
+<step>
+<index>2</index><content>User clicks the button &quot;sign in&quot;</content><expected>User is redirected to &quot;Your Feed&quot;</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>User sign in with invalid email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out email field with non-existent email and password
+
+</content><expected>The login fields have been filled in
+</expected></step>
+<step>
+<index>2</index><content>User presses the button &quot;sign in&quot;
+</content><expected>User is shown a message &quot;email or password is invalid&quot; and does not get logged in</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>User sign in with invalid password (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out password field with existing email and invalid password</content><expected>The sign in fields have been filled in</expected></step>
+<step>
+<index>2</index><content>User presses the &quot;sign in&quot; button</content><expected>User is shown a message &quot;email or password is invalid&quot; and does not get signed in</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>User sign up with existing username and non-existent email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out field with non-existent email and existing username
+</content><expected>The sign up fields have been filled in</expected></step>
+<step>
+<index>2</index><content>User presses the &quot;sign up&quot; button</content><expected>User is shown a message &quot;username has already been taken&quot; and does not get signed up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>User sign up with non-existent username and existing email (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User fills out field with existing email and non-existent username
+</content><expected>The sign up fields have been filled in</expected></step>
+<step>
+<index>2</index><content>The user presses the &quot;sign up&quot; button</content><expected>The user is shown a message &quot;email has already been taken&quot; and does not get signed up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>User clicks &quot;need an account?&quot; button</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is in sign in page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks &quot;Need an account?&quot; button</content><expected>User is redirected to the registration page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>User clicks &quot;have an account? &quot; button</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is in sign up page
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks &quot;Have an account?&quot; button</content><expected>User is redirected to the sign in page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Blog preview</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C9</id>
+				<title>User goes to blog post</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on the home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User presses article preview</content><expected>User is redirected to the article details</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Unregistered user clicks heart icon</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on the home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks heart icon</content><expected>User is redirected to &quot;sign up&quot; page </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Registered user clicks heart icon</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on the home page (global feed)</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks heart icon</content><expected>The number next to the heart icon changes by one and button becomes a filled color (green)</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Registered user clicks post author icon</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is in the global feed section on the home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks post author icon</content><expected>User is redirected to the user&apos;s profile</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Unregistered user clicks post author icon</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on the home page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks post author icon</content><expected>User is redirected to the user&apos;s profile</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>User clicks one of the tags on the right side of the page</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>User clicks one of the tags on the right side of the page</content><expected>The user is redirected to sections with blog posts tagged with the indicated tag</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Blog articles</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C15</id>
+				<title>User clicks &quot;New article&quot; button</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks &quot;New article&quot; button </content><expected>User is redirected to the section where he can create his article</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>User is able to create article</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and is on the &quot;New article&quot; page
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User fills in &quot;Article title&quot;, &quot;What&apos;s this article about?&quot;, &quot;Write your article (in markdown)&quot; and &quot;Enter tags&quot;</content><expected>The boxes are filled out</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Publish Article&quot; button</content><expected>User is redirected to the newly created post</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>User is able to open &quot;Edit Article&quot; page</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and on a newly created post page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks one of the &quot;Edit article&quot; buttons</content><expected>User is redirected to a page where he can edit the article
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>User is able to make a comment</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and on a newly created post page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User enters text into the &quot;Write a comment...&quot; field.</content><expected>The text appears in the &quot;Write comment...&quot; field </expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Post Comment&quot; button</content><expected>The comment is published under the article</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>User is able to delete a comment</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and on a newly created post page
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks a button in the form of a trash can</content><expected>Comment is deleted</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>User is able to delete a post</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and on a newly created post page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks the &quot;Delete Article&quot; button</content><expected>User deletes his article</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>User is able to edit post</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is on the page of editing posts</preconds>
+										<steps_separated><step>
+<index>1</index><content>User changes article data (&quot;Article title&quot;, &quot;What&apos;s this article about?&quot;, &quot;Write your article&quot;, &quot;Enter tags&quot;)</content><expected>The article&apos;s data is changed</expected></step>
+<step>
+<index>2</index><content>User clicks the &quot;Publish Article&quot; button</content><expected>The edited article is published</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>User is able to click their username</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and on a newly created post page</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks on their username
+</content><expected>User is redirected to their profile</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Settings</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C23</id>
+				<title>User is able to change &quot;URL of profile picture&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User changes &quot;URL of profile picture&quot; field</content><expected>&quot;URL of profile picture&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User presses &quot;Update Settings&quot; button</content><expected>URL of profile has been changed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>User is able to change &quot;Username&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User changes &quot;Username&quot; field</content><expected>&quot;Username&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User presses &quot;Update Settings&quot; button</content><expected>Username has been changed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>User is able to insert informations in &quot;Short bio about you&quot; field</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in the settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User is inserting informations in &quot;Short bio about you&quot; field</content><expected>Information in &quot;Short bio about you&quot; field has been changed
+</expected></step>
+<step>
+<index>2</index><content>User presses &quot;Update Settings&quot; button</content><expected>&quot;Short bio about you&quot; has been changed
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>User is able to change informations in &quot;Email&quot; field</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User is changing informations in &quot;Email&quot; field</content><expected>Information in &quot;Email&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Update Settings&quot; button</content><expected>Email of profile is changed</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>User is able to change informations in &quot;New Password&quot; field</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User is inserting informations in &quot;New Password&quot; field</content><expected>Information in &quot;New Password&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Update Settings&quot; button</content><expected>Password has been changed
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>User is unable to change email to one already in use (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User changes information in &quot;Email&quot; field</content><expected>Informations in &quot;Email&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Update Settings&quot; button</content><expected>The site is being refreshed. Email does not change</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>User is unable to change username to one already in use (negative)</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User changes information in &quot;Username&quot; field</content><expected>Informations in &quot;Username&quot; field has been changed</expected></step>
+<step>
+<index>2</index><content>User clicks &quot;Update Settings&quot; button</content><expected>The site is being refreshed. Username does not change</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>User is able to log out of the site</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>User is signed in and in settings</preconds>
+										<steps_separated><step>
+<index>1</index><content>User clicks &quot;Or click here to logout&quot; button </content><expected>User is logged out</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>

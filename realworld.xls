@@ -1,0 +1,227 @@
+﻿sep=,
+"ID","Title","Automation Type","Created By","Created On","Estimate","Expected Result","Forecast","Goals","Mission","Preconditions","Priority","References","Section","Section Depth","Section Description","Section Hierarchy","Steps","Steps","Steps (Additional Info)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Step)","Suite","Suite ID","Template","Type","Updated By","Updated On"
+"C1","Sign up"," None","Adrian Rubaj","10/29/2022 1:52 PM","","","","","","The user has an email address
+","Critical","","User login","0","","User login","1. User enters username, email address and password
+Expected Result:
+The fields username, adsress and password are filled in
+2. User clicks the ""sign up"" button
+Expected Result:
+User is redirected to ""your feed"" page","","1. 
+2.","1. The fields username, adsress and password are filled in
+
+2. User is redirected to ""your feed"" page","1. 
+2.","1. 
+2.","1. User enters username, email address and password
+2. User clicks the ""sign up"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:33 PM"
+"C2","Sign in"," None","Adrian Rubaj","10/29/2022 2:02 PM","","","","","","User is registered
+","Critical","","User login","0","","User login","1. User enters their email address and password
+Expected Result:
+The fields are filled in
+2. User clicks the button ""sign in""
+Expected Result:
+User is redirected to ""Your Feed""","","1. 
+2.","1. The fields are filled in
+
+2. User is redirected to ""Your Feed""","1. 
+2.","1. 
+2.","1. User enters their email address and password
+2. User clicks the button ""sign in""","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:32 PM"
+"C3","User sign in with invalid email (negative)"," None","Adrian Rubaj","10/29/2022 2:15 PM","","","","","","","Low","","User login","0","","User login","1. User fills out email field with non-existent email and password
+
+
+Expected Result:
+The login fields have been filled in
+2. User presses the button ""sign in""
+
+Expected Result:
+User is shown a message ""email or password is invalid"" and does not get logged in","","1. 
+2.","1. The login fields have been filled in
+
+2. User is shown a message ""email or password is invalid"" and does not get logged in","1. 
+2.","1. 
+2.","1. User fills out email field with non-existent email and password
+
+
+2. User presses the button ""sign in""","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:32 PM"
+"C4","User sign in with invalid password (negative)"," None","Adrian Rubaj","10/29/2022 2:17 PM","","","","","","","Low","","User login","0","","User login","1. User fills out password field with existing email and invalid password
+Expected Result:
+The sign in fields have been filled in2. User presses the ""sign in"" button
+Expected Result:
+User is shown a message ""email or password is invalid"" and does not get signed in","","1. 
+2.","1. The sign in fields have been filled in
+2. User is shown a message ""email or password is invalid"" and does not get signed in","1. 
+2.","1. 
+2.","1. User fills out password field with existing email and invalid password
+2. User presses the ""sign in"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:31 PM"
+"C5","User sign up with existing username and non-existent email (negative)"," None","Adrian Rubaj","10/29/2022 2:33 PM","","","","","","","Low","","User login","0","","User login","1. User fills out field with non-existent email and existing username
+
+Expected Result:
+The sign up fields have been filled in2. User presses the ""sign up"" button
+Expected Result:
+User is shown a message ""username has already been taken"" and does not get signed up","","1. 
+2.","1. The sign up fields have been filled in
+2. User is shown a message ""username has already been taken"" and does not get signed up","1. 
+2.","1. 
+2.","1. User fills out field with non-existent email and existing username
+
+2. User presses the ""sign up"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:31 PM"
+"C6","User sign up with non-existent username and existing email (negative)"," None","Adrian Rubaj","10/29/2022 2:39 PM","","","","","","","Low","","User login","0","","User login","1. User fills out field with existing email and non-existent username
+
+Expected Result:
+The sign up fields have been filled in2. The user presses the ""sign up"" button
+Expected Result:
+The user is shown a message ""email has already been taken"" and does not get signed up","","1. 
+2.","1. The sign up fields have been filled in
+2. The user is shown a message ""email has already been taken"" and does not get signed up","1. 
+2.","1. 
+2.","1. User fills out field with existing email and non-existent username
+
+2. The user presses the ""sign up"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 2:40 PM"
+"C7","User clicks ""need an account?"" button"," None","Adrian Rubaj","10/29/2022 3:00 PM","","","","","","User is in sign in page","Medium","","User login","0","","User login","1. User clicks ""Need an account?"" button
+Expected Result:
+User is redirected to the registration page","","1.","1. User is redirected to the registration page","1.","1.","1. User clicks ""Need an account?"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:34 PM"
+"C8","User clicks ""have an account? "" button"," None","Adrian Rubaj","10/29/2022 3:02 PM","","","","","","User is in sign up page
+","Medium","","User login","0","","User login","1. User clicks ""Have an account?"" button
+Expected Result:
+User is redirected to the sign in page","","1.","1. User is redirected to the sign in page","1.","1.","1. User clicks ""Have an account?"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:34 PM"
+"C9","User goes to blog post"," None","Adrian Rubaj","10/29/2022 3:11 PM","","","","","","User is on the home page","Medium","","Blog preview","0","","Blog preview","1. User presses article preview
+Expected Result:
+User is redirected to the article details","","1.","1. User is redirected to the article details","1.","1.","1. User presses article preview","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:37 PM"
+"C10","Unregistered user clicks heart icon"," None","Adrian Rubaj","10/29/2022 3:17 PM","","","","","","User is on the home page","Medium","","Blog preview","0","","Blog preview","1. User clicks heart icon
+Expected Result:
+User is redirected to ""sign up"" page","","1.","1. User is redirected to ""sign up"" page","1.","1.","1. User clicks heart icon","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:39 PM"
+"C11","Registered user clicks heart icon"," None","Adrian Rubaj","10/29/2022 3:23 PM","","","","","","User is on the home page (global feed)","Medium","","Blog preview","0","","Blog preview","1. User clicks heart icon
+Expected Result:
+The number next to the heart icon changes by one and button becomes a filled color (green)","","1.","1. The number next to the heart icon changes by one and button becomes a filled color (green)","1.","1.","1. User clicks heart icon","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:42 PM"
+"C12","Registered user clicks post author icon"," None","Adrian Rubaj","10/29/2022 3:37 PM","","","","","","User is in the global feed section on the home page","Medium","","Blog preview","0","","Blog preview","1. User clicks post author icon
+Expected Result:
+User is redirected to the user's profile","","1.","1. User is redirected to the user's profile","1.","1.","1. User clicks post author icon","Master","S1","Test Case (Steps)","Other","Adrian Rubaj","10/29/2022 8:43 PM"
+"C13","Unregistered user clicks post author icon"," None","Adrian Rubaj","10/29/2022 3:40 PM","","","","","","User is on the home page","Medium","","Blog preview","0","","Blog preview","1. User clicks post author icon
+Expected Result:
+User is redirected to the user's profile","","1.","1. User is redirected to the user's profile","1.","1.","1. User clicks post author icon","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 8:45 PM"
+"C14","User clicks one of the tags on the right side of the page"," None","Adrian Rubaj","10/29/2022 3:46 PM","","","","","","","Medium","","Blog preview","0","","Blog preview","1. User clicks one of the tags on the right side of the page
+Expected Result:
+The user is redirected to sections with blog posts tagged with the indicated tag","","1.","1. The user is redirected to sections with blog posts tagged with the indicated tag","1.","1.","1. User clicks one of the tags on the right side of the page","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 3:46 PM"
+"C15","User clicks ""New article"" button"," None","Adrian Rubaj","10/29/2022 3:52 PM","","","","","","User is signed in","Medium","","Blog articles","0","","Blog articles","1. User clicks ""New article"" button 
+Expected Result:
+User is redirected to the section where he can create his article","","1.","1. User is redirected to the section where he can create his article","1.","1.","1. User clicks ""New article"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 3:52 PM"
+"C16","User is able to create article"," None","Adrian Rubaj","10/29/2022 4:05 PM","","","","","","User is signed in and is on the ""New article"" page
+","Critical","","Blog articles","0","","Blog articles","1. User fills in ""Article title"", ""What's this article about?"", ""Write your article (in markdown)"" and ""Enter tags""
+Expected Result:
+The boxes are filled out2. User clicks ""Publish Article"" button
+Expected Result:
+User is redirected to the newly created post","","1. 
+2.","1. The boxes are filled out
+2. User is redirected to the newly created post","1. 
+2.","1. 
+2.","1. User fills in ""Article title"", ""What's this article about?"", ""Write your article (in markdown)"" and ""Enter tags""
+2. User clicks ""Publish Article"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:02 PM"
+"C17","User is able to open ""Edit Article"" page"," None","Adrian Rubaj","10/29/2022 4:13 PM","","","","","","User is signed in and on a newly created post page","High","","Blog articles","0","","Blog articles","1. User clicks one of the ""Edit article"" buttons
+Expected Result:
+User is redirected to a page where he can edit the article","","1.","1. User is redirected to a page where he can edit the article","1.","1.","1. User clicks one of the ""Edit article"" buttons","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 4:43 PM"
+"C18","User is able to make a comment"," None","Adrian Rubaj","10/29/2022 4:35 PM","","","","","","User is signed in and on a newly created post page","Medium","","Blog articles","0","","Blog articles","1. User enters text into the ""Write a comment..."" field.
+Expected Result:
+The text appears in the ""Write comment..."" field 2. User clicks ""Post Comment"" button
+Expected Result:
+The comment is published under the article","","1. 
+2.","1. The text appears in the ""Write comment..."" field 
+2. The comment is published under the article","1. 
+2.","1. 
+2.","1. User enters text into the ""Write a comment..."" field.
+2. User clicks ""Post Comment"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 4:44 PM"
+"C19","User is able to delete a comment"," None","Adrian Rubaj","10/29/2022 4:37 PM","","","","","","User is signed in and on a newly created post page
+","Medium","","Blog articles","0","","Blog articles","1. User clicks a button in the form of a trash can
+Expected Result:
+Comment is deleted","","1.","1. Comment is deleted","1.","1.","1. User clicks a button in the form of a trash can","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:05 PM"
+"C20","User is able to delete a post"," None","Adrian Rubaj","10/29/2022 4:41 PM","","","","","","User is signed in and on a newly created post page","High","","Blog articles","0","","Blog articles","1. User clicks the ""Delete Article"" button
+Expected Result:
+User deletes his article","","1.","1. User deletes his article","1.","1.","1. User clicks the ""Delete Article"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:08 PM"
+"C21","User is able to edit post"," None","Adrian Rubaj","10/29/2022 4:50 PM","","","","","","User is on the page of editing posts","High","","Blog articles","0","","Blog articles","1. User changes article data (""Article title"", ""What's this article about?"", ""Write your article"", ""Enter tags"")
+Expected Result:
+The article's data is changed2. User clicks the ""Publish Article"" button
+Expected Result:
+The edited article is published","","1. 
+2.","1. The article's data is changed
+2. The edited article is published","1. 
+2.","1. 
+2.","1. User changes article data (""Article title"", ""What's this article about?"", ""Write your article"", ""Enter tags"")
+2. User clicks the ""Publish Article"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 4:51 PM"
+"C22","User is able to click their username"," None","Adrian Rubaj","10/29/2022 4:56 PM","","","","","","User is signed in and on a newly created post page","Medium","","Blog articles","0","","Blog articles","1. User clicks on their username
+
+Expected Result:
+User is redirected to their profile","","1.","1. User is redirected to their profile","1.","1.","1. User clicks on their username","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 4:56 PM"
+"C23","User is able to change ""URL of profile picture"""," None","Adrian Rubaj","10/29/2022 5:07 PM","","","","","","User is signed in and in settings","Medium","","Settings","0","","Settings","1. User changes ""URL of profile picture"" field
+Expected Result:
+""URL of profile picture"" field has been changed2. User presses ""Update Settings"" button
+Expected Result:
+URL of profile has been changed","","1. 
+2.","1. ""URL of profile picture"" field has been changed
+2. URL of profile has been changed","1. 
+2.","1. 
+2.","1. User changes ""URL of profile picture"" field
+2. User presses ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:15 PM"
+"C24","User is able to change ""Username"""," None","Adrian Rubaj","10/29/2022 5:12 PM","","","","","","User is signed in and in settings","Medium","","Settings","0","","Settings","1. User changes ""Username"" field
+Expected Result:
+""Username"" field has been changed2. User presses ""Update Settings"" button
+Expected Result:
+Username has been changed","","1. 
+2.","1. ""Username"" field has been changed
+2. Username has been changed","1. 
+2.","1. 
+2.","1. User changes ""Username"" field
+2. User presses ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:16 PM"
+"C25","User is able to insert informations in ""Short bio about you"" field"," None","Adrian Rubaj","10/29/2022 5:17 PM","","","","","","User is signed in and in the settings","Medium","","Settings","0","","Settings","1. User is inserting informations in ""Short bio about you"" field
+Expected Result:
+Information in ""Short bio about you"" field has been changed
+2. User presses ""Update Settings"" button
+Expected Result:
+""Short bio about you"" has been changed","","1. 
+2.","1. Information in ""Short bio about you"" field has been changed
+
+2. ""Short bio about you"" has been changed","1. 
+2.","1. 
+2.","1. User is inserting informations in ""Short bio about you"" field
+2. User presses ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:22 PM"
+"C26","User is able to change informations in ""Email"" field"," None","Adrian Rubaj","10/29/2022 5:46 PM","","","","","","User is signed in and in settings","Medium","","Settings","0","","Settings","1. User is changing informations in ""Email"" field
+Expected Result:
+Information in ""Email"" field has been changed2. User clicks ""Update Settings"" button
+Expected Result:
+Email of profile is changed","","1. 
+2.","1. Information in ""Email"" field has been changed
+2. Email of profile is changed","1. 
+2.","1. 
+2.","1. User is changing informations in ""Email"" field
+2. User clicks ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:22 PM"
+"C27","User is able to change informations in ""New Password"" field"," None","Adrian Rubaj","10/29/2022 5:50 PM","","","","","","User is signed in and in settings","Medium","","Settings","0","","Settings","1. User is inserting informations in ""New Password"" field
+Expected Result:
+Information in ""New Password"" field has been changed2. User clicks ""Update Settings"" button
+Expected Result:
+Password has been changed","","1. 
+2.","1. Information in ""New Password"" field has been changed
+2. Password has been changed","1. 
+2.","1. 
+2.","1. User is inserting informations in ""New Password"" field
+2. User clicks ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:22 PM"
+"C28","User is unable to change email to one already in use (negative)"," None","Adrian Rubaj","10/29/2022 6:00 PM","","","","","","User is signed in and in settings","Low","","Settings","0","","Settings","1. User changes information in ""Email"" field
+Expected Result:
+Informations in ""Email"" field has been changed2. User clicks ""Update Settings"" button
+Expected Result:
+The site is being refreshed. Email does not change","","1. 
+2.","1. Informations in ""Email"" field has been changed
+2. The site is being refreshed. Email does not change","1. 
+2.","1. 
+2.","1. User changes information in ""Email"" field
+2. User clicks ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:26 PM"
+"C29","User is unable to change username to one already in use (negative)"," None","Adrian Rubaj","10/29/2022 6:02 PM","","","","","","User is signed in and in settings","Low","","Settings","0","","Settings","1. User changes information in ""Username"" field
+Expected Result:
+Informations in ""Username"" field has been changed2. User clicks ""Update Settings"" button
+Expected Result:
+The site is being refreshed. Username does not change","","1. 
+2.","1. Informations in ""Username"" field has been changed
+2. The site is being refreshed. Username does not change","1. 
+2.","1. 
+2.","1. User changes information in ""Username"" field
+2. User clicks ""Update Settings"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:27 PM"
+"C30","User is able to log out of the site"," None","Adrian Rubaj","10/29/2022 6:05 PM","","","","","","User is signed in and in settings","Medium","","Settings","0","","Settings","1. User clicks ""Or click here to logout"" button 
+Expected Result:
+User is logged out","","1.","1. User is logged out","1.","1.","1. User clicks ""Or click here to logout"" button","Master","S1","Test Case (Steps)","Functional","Adrian Rubaj","10/29/2022 9:29 PM"
